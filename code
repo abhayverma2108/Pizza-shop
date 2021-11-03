@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <unistd.h>
+
+int main() {
+
+    char name[15] = "Farm House";  //TODO
+    char size     ='M';
+    int servings  = 2;
+    float MRP     = 365.8;
+    
+    printf("Enter the size of the pizza (S.M.L) = ");
+    scanf("%c", &size);
+    
+    printf("Enter the number of people it serves = ");
+    scanf("%d", &servings);
+
+    printf("Enter retail price = ");
+    scanf("%f", &MRP);
+
+    printf("\nGenerating message......\n\n");
+    usleep(2000000);
+
+    printf("Sending SMS.......\n\n");
+    usleep(1000000);
+
+    printf("***********SMS Sent*****************");
+    
+
+
+
+    printf("\nyay! You have ordered a %s pizza of size %c that serves %d.\nPlease pay Rs. %.1F to the delivery person.\n", name, size, servings, MRP);
+    
+
+    return 0;
+
+}
